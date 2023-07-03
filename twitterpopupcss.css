@@ -11,7 +11,7 @@ body{
 }
 @font-face {
     font-family: Chirp-Bold;
-    src: url(/Fonts/Chirp-Bold.ttf);
+    src: url(Fonts/Chirp-Bold.ttf);
 }
 .box{
     background-color: black;
