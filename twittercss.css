@@ -10,15 +10,15 @@ body{
 }
 @font-face {
     font-family: Chirp-Light;
-    src: url(/Fonts/Chirp-Light.ttf);
+    src: url(../Fonts/Chirp-Light.ttf) format('truetype');
 }
 @font-face {
     font-family: Chirp-Bold;
-    src: url(/Fonts/Chirp-Bold.ttf);
+    src: url(../twitter-clone/Fonts/Chirp-Bold.ttf) format('truetype');
 }
 @font-face {
     font-family: Chirp-Extended-Heavy;
-    src: url(/Fonts/chirp-extendedheavy.ttf);
+    src: url(Fonts/chirp-extendedheavy.ttf) format('truetype');
 }
 .leftdiv{
     /* border: 1px solid gold; */
@@ -28,7 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/Images/twitter-background.png);
+    background-image: url(Images/twitter-background.png);
     background-size: cover;
     background-position: center;
 }
