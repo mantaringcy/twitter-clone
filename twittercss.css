@@ -10,11 +10,11 @@ body{
 }
 @font-face {
     font-family: Chirp-Light;
-    src: url(../Fonts/Chirp-Light.ttf) format('truetype');
+    src: url(Fonts/Chirp-Light.ttf) format('truetype');
 }
 @font-face {
     font-family: Chirp-Bold;
-    src: url(../twitter-clone/Fonts/Chirp-Bold.ttf) format('truetype');
+    src: url(Fonts/Chirp-Bold.ttf) format('truetype');
 }
 @font-face {
     font-family: Chirp-Extended-Heavy;
