@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+.container{
+    display: flex;
+}
+@font-face {
+    font-family: Chirp-Light;
+    src: url(/Fonts/Chirp-Light.ttf);
+}
+@font-face {
+    font-family: Chirp-Bold;
+    src: url(/Fonts/Chirp-Bold.ttf);
+}
+@font-face {
+    font-family: Chirp-Extended-Heavy;
+    src: url(/Fonts/chirp-extendedheavy.ttf);
+}
+.leftdiv{
+    /* border: 1px solid gold; */
+    width: 55%;
+    height: 730px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Images/twitter-background.png);
+    background-size: cover;
+    background-position: center;
+}
+/* .leftdiv .img1{
+    transform: scale(.77); 
+} */
+
+.leftdiv .img2{
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    width: 460px;
+    max-width: 100%;
+    transform: scale(.77);
+}
+.rightdiv{
+    /* border: 1px solid gold; */
+    width: 580px;
+    max-width: 100%;
+    height: 730px;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-left: 36px;
+}
+.rightdiv img{
+    width: 42px;
+    /* margin-top: 16px; */
+    /* margin-left: 2px; */
+}
+.rightdiv .happen{
+    /* border: 1px solid gold; */
+    color: rgb(230,233,234);
+    font-family: Chirp-Extended-Heavy;
+    font-size: 64px;
+    margin-top: 64px;
+    text-align: left;
+    width: 575px;
+    /* max-width: 100%; */
+}
+.rightdiv .join{
+    color: rgb(230,233,234);
+    font-family: Chirp-Extended-Heavy;
+    font-size: 31px;
+    text-align: left;
+    margin-top: -13px;
+}
+.rightdiv .googlesignin{
+    background-color: rgb(230,233,234);
+    width: 295px; height: 38px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googlesignin .img{
+    /* border: 1px solid gold; */
+    height: 35px;
+}
+.googlesignin .p{
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.rightdiv .applesignin{
+    background-color: rgb(230,233,234);
+    width: 295px; height: 38px;
+    border: none;
+    border-radius: 100px;
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.applesignin .img{
+    /* border: 1px solid gold; */
+    width: 35px;
+}
+.applesignin .p{
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 9px;
+}
+.rightdiv .hr{
+    width: 295px; height: 1px;
+    /* margin: 0 auto; */
+    margin-top: -26px;
+}
+.rightdiv p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 20px; */
+}
+.or{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: -1000px;
+}
+.or::before, .or::after{
+    content: "";
+    width: 130px;
+    height: 1px;
+    background-color: rgb(51,54,57);
+    display: block;
+}
+.rightdiv .createacc{
+    background-color: rgb(28,155,239);
+    width: 295px; height: 40.5px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 42.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createacc .p{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.rightdiv .cookie{
+    /* border: 1px solid red; */
+    width: 295px;
+    color: rgb(113,118,122);
+    text-align: left;
+    font-family: Chirp-Light;
+    font-size: 10.9px;
+    margin-top: 8px;
+}
+.cookie a{
+    text-decoration: none;
+    color: rgb(28,155,239);
+}
+.rightdiv .already{
+    color: rgb(230,233,234);
+    font-family: Chirp-Bold;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 56px;
+}
+.rightdiv .signin{
+    border: 1px solid rgb(83,99,113);
+    background-color: black;
+    width: 295px; height: 37px;
+    border-radius: 100px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin .p{
+    color: rgb(28,155,239);;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.cookie a:hover{
+    text-decoration: underline;
+}
+.googlesignin:hover, .applesignin:hover, .next:hover, .createacc:hover, .signin:hover{
+    cursor: pointer;
+}
+.googlesignin:hover, .applesignin:hover, .next:hover, .createacc:hover{
+    filter: brightness(95%);
+}
+.signin:hover{
+    filter: contrast(80%);
+}
+
+.footerdiv{
+    /* border: 1px solid gold; */
+    color: rgb(113,118,122);
+    font-family: Chirp-Light;
+    font-size: 13px;
+
+    /* width: 100%; */
+    /* max-height: 90px; */
+    /* height: auto; */
+
+    /* display: flex; */
+    height: calc(100vh - 730px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+
+    column-gap: 17px;
+    row-gap: 15px;
+    /* gap: 17px; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+}
+.footer .par{
+    /* border: 1px solid red; */
+    /* width: auto; */
+    /* height: auto; */
+    /* overflow: auto; */
+    height: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(113,118,122);
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1000px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .rightdiv{
+        /* border: 1px solid gold; */
+        order: -1;
+        width: 100%;
+        height: 800px;
+        margin: auto;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .rightdiv span::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .rightdiv .happen{
+        text-align: center;
+    }
+    .leftdiv{
+        /* border: 1px solid gold; */
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (max-width:500px) {
+    .rightdiv{
+        /* border: 1px solid gold; */
+        order: -1;
+        width: 100%;
+        height: 653px;
+        margin: auto;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .rightdiv .happen{
+        /* border: 1px solid gold; */
+        color: rgb(230,233,234);
+        font-family: Chirp-Extended-Heavy;
+        font-size: 40px;
+        /* margin-top: 64px; */
+        text-align: center;
+        width: 575px;
+        /* max-width: 100%; */
+    }
+    .rightdiv .join{
+        color: rgb(230,233,234);
+        font-family: Chirp-Extended-Heavy;
+        font-size: 24px;
+        text-align: left;
+        margin-top: -13px;
+    }
+    .rightdiv span::after{
+        content: "\a";
+        white-space: normal;
+    }
+}

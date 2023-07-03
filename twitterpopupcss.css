@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(36,45,53);
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    
+}
+@font-face {
+    font-family: Chirp-Bold;
+    src: url(/Fonts/Chirp-Bold.ttf);
+}
+.box{
+    background-color: black;
+    width: 600px; height: 650px;
+    border-radius: 15px;
+    margin-top: 73px;
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    flex-direction: column;   
+}
+.dot{
+    /* border: 1px solid gold; */
+    height: 40px;
+    width: 40px;
+    /* background-color: hsl(0, 0%, 10%); */
+    border-radius: 50%;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+
+    justify-content: center;
+    align-items: center;
+    align-self: baseline;
+    /* float: left; */
+    /* margin-left: -550px; */
+    /* position: absolute; */
+    /* left: 42 0px; */
+}
+.dot:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.box .close{
+    /* border: 1px solid gold; */
+    /* color: white; */
+    font-size: 23px;
+
+    /* display: flex; */
+    margin-bottom: 2px;
+    /* margin-top: 11px; */
+    /* margin-left: 20px; */
+}
+.close a{
+    text-decoration: none;
+    color: white;
+}
+.box #twitterwhite{
+    /* border: 1px solid gold; */
+    height: 30px;
+    margin-top: -34px;
+}
+.box .signintotwitter{
+    color: rgb(230,233,234);
+    /* margin-left: -100px; */
+    margin-top: 32px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Chirp-Bold;
+    font-weight: bold;
+    font-size: 30px;
+}
+.box .googlesignin{
+    background-color: rgb(230,233,234);
+    width: 295px; height: 38px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googlesignin .img{
+    /* border: 1px solid gold; */
+    height: 35px;
+}
+.googlesignin .p{
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.box .applesignin{
+    background-color: rgb(230,233,234);
+    width: 295px; height: 38px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.applesignin .img{
+    /* border: 1px solid gold; */
+    height: 35px;
+}
+.applesignin .p{
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 9px;
+}
+.box .hr{
+    width: 295px; height: 1px;
+    margin: 0 auto;
+    margin-top: -16px;
+}
+.box p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.or{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: -1000px;
+}
+.or::before, .or::after{
+    content: "";
+    width: 127.5px;
+    height: 1px;
+    background-color: rgb(51,54,57);
+    display: block;
+}
+.box .input{
+    border: 1px solid rgb(51,54,57);
+    background-color: black;
+    width: 295px; height: 55px;
+    margin-top: 53px;
+    padding: 9px;
+    font-size: 17px;
+    color: white;
+}
+.box .input::placeholder{
+    color: rgb(106,111,115);
+}
+.box .next{
+    background-color: rgb(230,233,234);
+    width: 295px; height: 37px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next .p{
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.box .forgot{
+    background-color: black;
+    width: 295px; height: 37px;
+    border: 1px solid rgb(81,96,110);
+    border-radius: 100px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.forgot .p{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.box .signup{
+    color: rgb(113,118,122);
+    /* margin-left: -100px; */
+    margin-top: 53px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.signup a{
+    color: rgb(28,155,239);
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+.box .googlesignin:hover, .applesignin:hover, .next:hover, .forgot:hover{
+    cursor: pointer;
+}
+.box .googlesignin:hover, .applesignin:hover, .next:hover{
+    filter: brightness(95%);
+}
+.box .forgot:hover{
+    filter: contrast(80%);
+}
+@media screen and (max-width:690px) {
+    body{
+        background-color: black;
+    }
+    .dot{
+        margin-left: 60px;
+    }
+}
